@@ -25,5 +25,10 @@ Dishwasher Cookbooks
 
 This function returns a list of cookbooks from which no nodes use any recipes.
 
+#### Usage
+```bash
+knife dishwasher cookbooks
+```
+
 ## Bugs
 It's really, really slow.
