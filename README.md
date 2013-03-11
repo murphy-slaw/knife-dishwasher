@@ -1,6 +1,7 @@
 # knife-dishwasher
 
-A plugin for Chef::Knife plugin which helps you find unused roles, cookbooks, and recipes in your Chef server.
+A Chef::Knife plugin which helps you find unused roles and cookbooks in your
+Chef server..
 
 # Installation
 
@@ -8,10 +9,21 @@ A plugin for Chef::Knife plugin which helps you find unused roles, cookbooks, an
 
 Copy dishwasher.rb script from lib/chef/knife to your ~/.chef/plugins/knife directory.
 
-## Preface
+Dishwasher Roles
+----------------
 
+This function returns a list of roles which exist in your Chef server which
+have no nodes associated with them.
 
-## What it does
+#### Usage
+```bash
+knife dishwasher roles
+```
 
-## Notes
+Dishwasher Cookbooks
+--------------------
 
+This function returns a list of cookbooks from which no nodes use any recipes.
+
+## Bugs
+It's really, really slow.
